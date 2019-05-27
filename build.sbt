@@ -4,7 +4,7 @@ lazy val root = (project in file(".")).
   settings(
     inThisBuild(List(
       organization := "com.example",
-      scalaVersion := "2.12.6",
+      scalaVersion := "2.12.8",
       version      := "0.1.0-SNAPSHOT"
     )),
     name := "IoTClientRegistry",
@@ -12,4 +12,4 @@ lazy val root = (project in file(".")).
     "com.microsoft.azure.sdk.iot" % "iot-service-client" % "1.13.1")
   )
 mainClass in assembly := Some("example.Hello")
-javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint")
+javacOptions ++= Seq("-source", "11", "-target", "11", "-Xlint")
